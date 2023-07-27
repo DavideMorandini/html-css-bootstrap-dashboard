@@ -18,24 +18,54 @@
     <div id="general_container">
 
         <!-- Header -->
-        <header class="my_c_header">
+        <header class="my_c_header d-flex">
 
-            <nav class="navbar">
+            <div class="container-fluid gx-0">
 
-                <div class="container">
+                <div class="row gx-0">
 
-                    <div class="card">
-                        <img class="img-fluid" src="./assets/img/mobile-logo.png" alt="mobile logo">
+                    <div class="col-2">
+
+                        <div class="card">
+
+                            <img class="my_logo" src="./assets/img/mobile-logo.png" alt="logo mobile">
+                        </div>
                     </div>
 
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel">
-                       
-                    </form>
+                    <div class="col-8">
+                        <form class="d-flex" role="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input class="form-control my_search_bar" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                        </form>
+                    </div>
 
+                    <div class="col-2">
+
+                        <div class="dropdown d-flex justify-content-end">
+
+                            <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="my_bell fa-solid fa-bell"></i>
+                            </button>
+
+                            <ul class="dropdown-menu">
+
+                                <li>
+                                    <a class="dropdown-item" href="#">Profilo</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">Fatturazione</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </nav>  
-
+            </div>
+           
         </header>
      
         <!-- Container top -->
@@ -68,7 +98,7 @@
 
                                 <a class="nav-link text-white text-sm-center d-flex justify-content-evenly align-items-center" href="#">
                                     <i class="fa-solid fa-signal"></i>
-                                    <span class="d-sm-none d-lg-inline-block">Signlas</span>
+                                    <span class="d-sm-none d-lg-inline-block">Signals</span>
                                 </a>
                             </li>
                         </ul>
