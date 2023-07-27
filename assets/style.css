@@ -3,3 +3,89 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* l'header ha una height fissa in px, usa header snippet di bootstrap e l'inspector per trovare l'height giusta
+la side bar ha una width fissa in px, usa sidebar snippet di bootstrap e l'inspector per trovare la width giusta
+e il main dipende è un calc che dipende sia dalla sidebar sia dell'header
+*/
+
+/* Debug */
+#general_container {
+    border: 3px solid black;
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    border: 2px solid orangered;
+    width: 100%;
+    height: 80px;
+}
+
+.container-fluid {
+    border: 2px solid orangered;
+    height: calc(100% - 80px);
+}
+
+.nav-bar {
+    border: 1px solid violet;
+    width: 15%;
+    height: 100%;
+}
+
+.nav-item {
+    border: 1px solid green;
+    width: 100%;
+}
+
+.nav-link {
+    border: 1px solid yellow;
+    width: 100%;
+}
+
+.row {
+    border: 1px solid red;
+    height: 100%;
+}
+
+.col-12 {
+    border: 1px solid blue;
+    /* height: 200px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* My Color */
+.my_c_header {
+    background-color: #ffffff;
+}
+
+.my_bg_image {
+    background-image: url("./img/sidebar-bg.png");  
+    background-color: #051e34;
+}
+
+
+
+
+
+/* .my_nav_bar {
+    border: 2px solid blue;
+    width: 20%;
+    height: 100%;
+}
+
+.my_main {
+    border: 2px solid blue;
+    width: calc(100% - 20%);
+    height: 100%;
+} */
