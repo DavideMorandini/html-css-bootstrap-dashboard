@@ -17,53 +17,74 @@ e il main dipende è un calc che dipende sia dalla sidebar sia dell'header
 }
 
 header {
-    border: 1px solid orangered;
+    /* border: 3px solid orangered; */
     width: 100%;
     height: 80px;
 }
 
+.container {
+    /* border: 3px solid lightseagreen; */
+}
+
 .container-fluid {
-    border: 1px solid orangered;
+    /* border: 1px solid orangered; */
     height: calc(100% - 80px);
+    display: flex;
+    flex-direction: row;
 }
 
 .nav-bar {
-    border: 1px solid violet;
+    /* border: 3px solid violet; */
     width: 15%;
     height: 100%;
 }
 
 .nav-item {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 100%;
 }
 
 .nav-link {
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     width: 100%;
 }
 
 .row {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 100%;
 }
 
 .col-12 {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .col-2 {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .col-8 {
-    border: 1px solid blue; 
+    /* border: 1px solid blue;  */
+}
+
+.option {
+    /* border: 1px solid red; */
+}
+
+.dropdown {
+    /* border: 1px solid green; */
+}
+
+.btn {
+    /* border: 1px solid blue; */
+}
+
+form {
+    /* border: 1px solid green;  */
 }
 
 .card {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 60px;
-    aspect-ratio: 1;
 }
 
 .my_logo {
@@ -71,9 +92,68 @@ header {
     object-fit: cover;
 }
 
+.my_text_logo {
+    /* border: 1px solid pink; */
+    width: 140px;
+}
 
+.my_container_main {
+    border: 5px solid green;
+    width: calc(100% - 15%);
+}
 
+.banner {
+    /* border: 1px solid blue; */
+    background-color: #1b72e8;
+}
 
+.row_banner {
+    /* border: 5px solid green; */
+}
+
+.my_fs {
+    font-size: 12px;
+}
+
+.col {
+    border: 1px solid blue;
+}
+
+.container {
+    /* border: 5px solid lawngreen; */
+}
+
+.row {
+    /* border: 1px solid red; */
+}
+
+.col-12 {
+    /* border: 1px solid violet; */
+}
+
+.my_prox_class {
+    /* border: 1px solid blue; */
+}
+
+.my_img {
+    width: 35px;
+}
+
+.my_c_done {
+    background-color: #128853;
+}
+
+.my_c_process {
+    background-color: #ffc201;
+}
+
+.my_c_failed {
+    background-color: #dd3243;
+}
+
+.my_c_pencil {
+    background-color: #ffffff;
+}
 
 
 
@@ -83,7 +163,7 @@ header {
 
 /* My Color */
 .my_c_header {
-    background-color: #ffffff;
+    background-color:#f8f9fa;
 }
 
 .my_bg_image {
@@ -95,31 +175,22 @@ header {
     color: #ff8f00;
 }
 
-.my_search_bar {
+.my_c_search_bar {
     background-color: #e5e5e5;
 }
 
-.dropdown {
-    border: 1px solid green;
+.my_con_main_bgcol {
+    background-color: #f8f9fa;
 }
 
-.btn {
-    border: 1px solid blue;
+.my_title_col {
+    background-color: #f7f7f7;
+}
+
+.my_c_blaze {
+    background-color: #0e5bbb;
 }
 
 
 
 
-
-
-/* .my_nav_bar {
-    border: 2px solid blue;
-    width: 20%;
-    height: 100%;
-}
-
-.my_main {
-    border: 2px solid blue;
-    width: calc(100% - 20%);
-    height: 100%;
-} */

@@ -20,28 +20,44 @@
         <!-- Header -->
         <header class="my_c_header d-flex">
 
-            <div class="container-fluid gx-0">
+            <div class="container gx-0">
 
-                <div class="row gx-0">
+                <div class="row d-flex align-items-center gx-0">
 
                     <div class="col-2">
 
-                        <div class="card">
+                        <div class="card d-flex justify-content-center border-0">
 
-                            <img class="my_logo" src="./assets/img/mobile-logo.png" alt="logo mobile">
+                            <img class="my_logo d-lg-none" src="./assets/img/mobile-logo.png" alt="logo mobile">
+
+                            <img class="my_text_logo d-sm-none d-md-none d-lg-block" src="./assets/img/logo.svg" alt="">
                         </div>
                     </div>
 
                     <div class="col-8">
-                        <form class="d-flex" role="search">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <input class="form-control my_search_bar" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
-                        </form>
+                        <form class="position-relative d-flex" role="search">
+                            <i class=" position-absolute top-50 start-0 translate-middle fa-solid fa-magnifying-glass ms-4 "></i>
+
+                            <input class="form-control my_c_search_bar ps-5" type="search" placeholder="Prova a cercare: Lezioni di Laravel" 
+                            aria-label="Search">
+                        </form> 
                     </div>
 
                     <div class="col-2">
 
-                        <div class="dropdown d-flex justify-content-end">
+                        <div class="dropdown d-flex justify-content-between align-items-center mx-2">
+
+                            <div class="option d-sm-none d-md-none d-lg-block">
+                                <i class="fa-solid fa-list"></i>
+                            </div>
+                           
+                            <div class="option d-sm-none d-md-none d-lg-block">
+                                <i class="fa-solid fa-circle-question"></i>
+                            </div>
+
+                            <div class="option d-sm-none d-md-none d-lg-block">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
 
                             <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="my_bell fa-solid fa-bell"></i>
@@ -65,9 +81,8 @@
                     </div>
                 </div>
             </div>
-           
         </header>
-     
+
         <!-- Container top -->
         <div class="container-fluid g-0 d-flex">
 
@@ -111,61 +126,290 @@
                         </a>
                     </div>
                 </div>
-            </div>       
-        </div>          
-                
-                
-                
-                
-                
-        <!--                
-            <ul class="nav d-flex flex-column">
+            </div>    
+            
+            <!-- Main -->
+            <div class="my_container_main my_con_main_bgcol overflow-y-scroll">
 
-                    <li class="nav-item">
+                <div class="banner">
 
-                        <a class="nav-link text-white text-sm-center d-flex justify-content-evenly align-items-center" href="#">
-                            <i class="fa-solid fa-house"></i>
-                            <span class="d-sm-none d-lg-inline-block">Home</span>
-                        </a>
-                    </li>
+                    <div class="row_banner d-flex flex-sm-column flex-md-row flex-lg-row">
 
-                    <li class="nav-item">
+                        <div class="col-sm-12 col-md-4 col-lg-3 pt-sm-4 pb-sm-2 order-md-3">
 
-                        <a class="nav-link text-white text-sm-center d-flex justify-content-evenly align-items-center" href="#">
-                            <i class="fa-solid fa-chart-simple"></i>
-                            <span class="d-sm-none d-lg-inline-block">Stats</span>
-                        </a>
-                    </li>
+                            <span class="text-white px-3">Nuovo Studente</span>
+                          
+                            <span class="border text-white p-2 rounded">
+                                <i class="text-white fa-solid fa-plus"></i>
+                            </span>
+                        </div>
 
-                    <li class="nav-item">
+                        <div class="col-sm-12 col-md-4 col-lg-6 pt-sm-2 pb-sm-3 pt-md-4 pb-md-2 order-md-1">
 
-                        <a class="nav-link text-white text-sm-center d-flex justify-content-evenly align-items-center" href="#">
-                        <i class="fa-solid fa-signal"></i>
-                            <span class="d-sm-none d-lg-inline-block">Signlas</span>
-                        </a>
-                    </li>
-                </ul>
+                            <div class="p-sm-3 ps-md-3 p-md-0">
+                                <span class="text-white fs-1">
+                                    Boolean
+                                </span>
+    
+                                <span class="text-white rounded-pill px-sm-2 py-sm-1 my_c_blaze">
+                                    Piano blaze
+                                </span>
+                            </div>
 
-                <i class="fa-solid fa-gear text-white "></i>
-              
-            </div> -->
+                            <div class="px-sm-3 ps-md-3 pt-1 pb-2">
+                                <span class="text-white rounded-pill px-2 py-1 ps-md-3 my_c_blaze">
+                                    3 app
+                                </span>
+    
+                                <span class="text-white px-2">
+                                    <i class="text-white fa-solid fa-forward"></i>
+                                </span>
+    
+                                <span class="text-white rounded-pill px-2 py-1 my_c_blaze">
+                                    <i class="text-white rounded-circle my_fs fa-solid fa-plus"></i>
+                                </span>
 
+                                <span class="text-white rounded-pill px-2 py-1 my_c_blaze d-sm-none d-md-none d-lg-inline-block">
+                                    Boolean mobile app
+                                </span>
 
+                                <span class="text-white rounded-pill px-2 py-1 my_c_blaze d-sm-none d-md-none d-lg-inline-block">
+                                    Boolean web app
+                                </span>
 
+                                <span class="text-white rounded-pill px-2 py-1 my_c_blaze d-sm-none d-md-none d-lg-inline-block">
+                                    Boolean blog app
+                                </span>
+                            </div>
+                        </div>
 
+                        <div class="col-sm-12 col-md-4 col-lg-3 py-sm-2 pt-md-4 pb-md-2 order-md-2">
+                            <div class="text-white fw-bold px-3">
+                                Studenti online negli ultimi 30 minuti
+                            </div>
+
+                            <div class="text-white fs-1 px-3">
+                               125
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             
 
-       
+                <!-- Continua da qui usa kitchen sink--> 
+                <div class="px-3">
+
+                    <div class="row">
+
+                        <div class="col-12 px-2 py-4">
+
+                            <div class="card w-100 my_prox_class">
+                                <div class="card-header fs-2 pb-3">
+                                  Prossime classi
+                                </div>
+
+                                <ul class="list-group list-group-flush px-1">
+
+                                    <li class="list-group-item">
+
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <td scope="col">Nome</td>
+                                                    <td scope="col">Data inizio</td>
+                                                    <td scope="col">ROI</td>
+                                                    <td scope="col">Stato</td>
+                                                    <td scope="col">Azioni</td>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr>
+                                                    <td scope="row">
+                                                        <img class="my_img" src="./assets/img/class-avatar.jpg" alt="symbol"> 
+                                                        <span class="ps-3">Classe 75</span>
+                                                    </td>
+                                                    <td>15 Feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td>
+                                                        <div class="my_c_done w-50 rounded text-center text-white">Done</div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn border-black text-center rounded me-2 my_c_pencil" type="button">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </button>
+                                                       
+                                                        <button class="btn border-black text-center rounded  my_c_pencil" type="button">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </button>       
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td scope="row">
+                                                        <img class="my_img" src="./assets/img/class-avatar.jpg" alt="symbol"> 
+                                                        <span class="ps-3">Classe 76</span>
+                                                    </td>
+                                                    <td>16 Feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td>
+                                                        <div class="my_c_done w-50 rounded text-center text-white">Done</div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn border-black 
+                                                        text-center rounded me-2 my_c_pencil" type="button">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </button>
+                                                       
+                                                        <button class="btn border-black text-center rounded  my_c_pencil" type="button">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </button>                         
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td scope="row">
+                                                        <img class="my_img" src="./assets/img/class-avatar.jpg" alt="symbol"> 
+                                                        <span class="ps-3">Classe 77</span>
+                                                    </td>
+                                                    <td>17 Feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td>
+                                                        <div class="my_c_process w-50 rounded text-center text-white">Process</div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn border-black text-center rounded me-2 my_c_pencil" type="button">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </button>
+                                                       
+                                                        <button class="btn border-black text-center rounded  my_c_pencil" type="button">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </button>                         
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td scope="row">
+                                                        <img class="my_img" src="./assets/img/class-avatar.jpg" alt="symbol"> 
+                                                        <span class="ps-3">Classe 78</span>
+                                                    </td>
+                                                    <td>18 Feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td>
+                                                        <div class="my_c_done w-50 rounded text-center text-white">Done</div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn border-black text-center rounded me-2 my_c_pencil" type="button">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </button>
+                                                       
+                                                        <button class="btn border-black text-center rounded  my_c_pencil" type="button">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </button>                       
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td scope="row">
+                                                        <img class="my_img" src="./assets/img/class-avatar.jpg" alt="symbol"> 
+                                                        <span class="ps-3">Classe 79</span>
+                                                    </td>
+                                                    <td>19 Feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td>
+                                                        <div class="my_c_failed w-50 rounded text-center text-white">Failed</div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn border-black text-center rounded me-2 my_c_pencil" type="button">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </button>
+                                                       
+                                                        <button class="btn border-black text-center rounded  my_c_pencil" type="button">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </button>                         
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td scope="row">
+                                                        <img class="my_img" src="./assets/img/class-avatar.jpg" alt="symbol"> 
+                                                        <span class="ps-3">Classe 80</span>
+                                                    </td>
+                                                    <td>20 Feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td>
+                                                        <div class="my_c_done w-50 rounded text-center text-white">Done</div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn border-black text-center rounded me-2 my_c_pencil" type="button">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </button>
+                                                       
+                                                        <button class="btn border-black text-center rounded  my_c_pencil" type="button">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </button>                       
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td scope="row">
+                                                        <img class="my_img" src="./assets/img/class-avatar.jpg" alt="symbol"> 
+                                                        <span class="ps-3">Classe 81</span>
+                                                    </td>
+                                                    <td>21 Feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td>
+                                                        <div class="my_c_failed w-50 rounded text-center text-white">Failed</div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn border-black text-center rounded me-2 my_c_pencil" type="button">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </button>
+                                                       
+                                                        <button class="btn border-black text-center rounded  my_c_pencil" type="button">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </button>                        
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td scope="row">
+                                                        <img class="my_img" src="./assets/img/class-avatar.jpg" alt="symbol"> 
+                                                        <span class="ps-3">Classe 82</span>
+                                                    </td>
+                                                    <td>22 Feb 2021</td>
+                                                    <!-- <td colspan="2" -->
+                                                    <td>20%</td>
+                                                    <td>
+                                                        <div class="my_c_done w-50 rounded text-center text-white">Done</div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn border-black text-center rounded me-2 my_c_pencil" type="button">
+                                                            <i class="fa-solid fa-pencil"></i>
+                                                        </button>
+                                                       
+                                                        <button class="btn border-black text-center rounded  my_c_pencil" type="button">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </button>                         
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </div> 
+
+                          
+                        </div>
+
+                        <div class="col-12"></div>
+                    </div>
+                </div>
 
 
-        
-
-
-
-
-
-
+            </div>
+        </div>          
         <!-- NO Footer -->
     </div>
     <!-- JavaScript -->
