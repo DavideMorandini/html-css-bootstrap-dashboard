@@ -26,7 +26,7 @@ header {
     /* border: 3px solid lightseagreen; */
 }
 
-.container-fluid {
+.content {
     /* border: 1px solid orangered; */
     height: calc(100% - 80px);
     display: flex;
