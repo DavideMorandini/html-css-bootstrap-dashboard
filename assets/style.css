@@ -223,6 +223,34 @@ form {
     background-color: #0e5bbb;
 }
 
+/* Media Query */
+@media screen and (max-width:992px) {
+    .w_md_50 {
+        width: 50% !important;
+    }
+}
 
+@media screen and (max-width:768px) {
+    .w_md_50 {
+        width: 100% !important;
+    }
+}
 
+@media screen and (max-width:576px) {
+    .w_md_50 {
+        width: 100% !important;
+    }
+
+    .col-6 {
+        width: 100%;
+    }
+
+    .col-4 {
+        width: 100%;
+    }
+
+    .my_col_cap {
+        width: 100%;
+    }
+}
 
