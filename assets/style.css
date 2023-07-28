@@ -171,6 +171,19 @@ form {
     /* border: 5px solid red; */
 }
 
+.col-2, .col-4, .col-6, .col-12 {
+    border: 1px solid red;
+}
+
+.offcanvas {
+    border: 5px solid blue;
+}
+
+
+
+
+
+
 
 
 

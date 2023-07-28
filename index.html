@@ -137,11 +137,105 @@
 
                         <div class="col-sm-12 col-md-4 col-lg-3 pt-sm-4 pb-sm-2 order-md-3">
 
+                            <!-- Offcanvas -->
                             <span class="text-white px-3">Nuovo Studente</span>
                           
-                            <span class="border text-white p-2 rounded">
+                            <button class="btn border text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                                 <i class="text-white fa-solid fa-plus"></i>
-                            </span>
+                            </button>
+
+                            <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+
+                                <div div class="offcanvas-body">
+                                    <div class="container_canvas">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label for="input_name" class="form-label">Nome</label>
+                                                <input type="text" id="input_name" class="form-control" aria-describedby="passwordHelpBlock">
+                                            </div>
+
+                                            <div class="col-6">
+                                                <label for="input_surname" class="form-label">Cognome</label>
+                                                <input type="text" id="input_surname" class="form-control" aria-describedby="passwordHelpBlock">
+                                            </div>
+
+                                            <div class="col-6 position-relative">
+                                                <div>Email</div>
+                                                <div class="input-group mb-3 position-absolute ">
+                                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                                    <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+                                                  </div>
+                                            </div>
+                                            
+                                            <div class="col-6">
+                                                <label for="input_password" class="form-label">Password</label>
+                                                <input type="password" id="input_password" class="form-control" aria-describedby="passwordHelpBlock">
+                                            </div>
+
+                                            <div class="col-6">
+                                                <label for="input_email_address" class="form-label">Indirizzo Email</label>
+                                                <input type="email" id="input_email_address" class="form-control" aria-describedby="passwordHelpBlock">
+                                            </div>
+
+                                            <div class="col-6">
+                                                <label for="input_password" class="form-label">Password</label>
+                                                <input type="password" id="input_password" class="form-control" aria-describedby="passwordHelpBlock">
+                                            </div>
+
+                                            <div class="col-12">
+                                                <label for="input_address" class="form-label">Indirizzo</label>
+                                                <input type="text" id="input_address" class="form-control" aria-describedby="passwordHelpBlock">
+                                            </div>
+
+                                            <div class="col-6">
+                                                <label for="input_city" class="form-label">Città</label>
+                                                <input type="text" id="input_city" class="form-control" aria-describedby="passwordHelpBlock">
+                                            </div>
+
+                                            <div class="col-4">
+                                                <div>Stato</div>
+                                                <select class="form-select d-flex" aria-label="Default select example">
+                                                    <option selected>Scegli...</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-2">
+                                                <label for="input_cap" class="form-label">CAP</label>
+                                                <input type="number" id="input_cap" class="form-control" 
+                                                aria-describedby="passwordHelpBlock">
+                                            </div>
+
+                                            <div class="col-12">
+                                                <label for="input_photo" class="form-label">Foto</label>
+                                                <input type="file" id="input_photo" class="form-control" 
+                                                aria-describedby="passwordHelpBlock">
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Seleziona per proseguire
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <button type="button" class="btn btn-primary">Salva</button>
+
+                                                <button type="button" class="btn btn-warning">Svuota</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="col-sm-12 col-md-4 col-lg-6 pt-sm-2 pb-sm-3 pt-md-4 pb-md-2 order-md-1">
