@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
+
+    <!-- General Container -->
     <div id="general_container">
 
         <!-- Header -->
@@ -24,6 +26,7 @@
 
                 <div class="row d-flex align-items-center gx-0">
 
+                    <!-- Logo -->
                     <div class="col-2">
 
                         <div class="card d-flex justify-content-center border-0">
@@ -34,7 +37,9 @@
                         </div>
                     </div>
 
+                    <!-- Search bar -->
                     <div class="col-8">
+
                         <form class="position-relative d-flex" role="search">
                             <i class=" position-absolute top-50 start-0 translate-middle fa-solid fa-magnifying-glass ms-4 "></i>
 
@@ -43,6 +48,7 @@
                         </form> 
                     </div>
 
+                    <!-- Incons and Dropdown bell -->
                     <div class="col-2">
 
                         <div class="dropdown d-flex justify-content-between align-items-center mx-2">
@@ -86,14 +92,16 @@
         <!-- Container top -->
         <div class="container-fluid content g-0 d-flex">
 
+            <!-- Side bar -->
             <div class="nav-bar my_bg_image">
 
                 <div class="row g-0 d-flex flex-column justify-content-between">
+
                     <div class="col-12">
                         
                         <ul class="nav d-flex flex-column">
 
-                            <li class="nav-item">
+                            <li class="nav-item my_hover_item">
 
                                 <a class="nav-link text-white text-sm-center d-flex justify-content-evenly align-items-center" href="#">
                                     <i class="fa-solid fa-house"></i>
@@ -101,7 +109,7 @@
                                 </a>
                             </li>
 
-                            <li class="nav-item">
+                            <li class="nav-item my_hover_item">
 
                                 <a class="nav-link text-white text-sm-center d-flex justify-content-evenly align-items-center" href="#">
                                     <i class="fa-solid fa-chart-simple"></i>
@@ -109,7 +117,7 @@
                                 </a>
                             </li>
 
-                            <li class="nav-item">
+                            <li class="nav-item my_hover_item">
 
                                 <a class="nav-link text-white text-sm-center d-flex justify-content-evenly align-items-center" href="#">
                                     <i class="fa-solid fa-signal"></i>
@@ -120,6 +128,7 @@
                     </div>
                     
                     <div class="col-12">
+
                         <a class="nav-link text-white text-sm-center d-flex justify-content-evenly align-items-center mb-5" href="#">
                             <i class="fa-solid fa-gear text-white "></i>
                             <span class="d-sm-none d-lg-inline-block">Admin</span>
@@ -131,19 +140,21 @@
             <!-- Main -->
             <div class="my_container_main my_con_main_bgcol overflow-y-scroll">
 
+                <!-- Banner -->
                 <div class="banner">
 
                     <div class="row_banner d-flex flex-sm-column flex-md-row flex-lg-row">
 
                         <div class="col-sm-12 col-md-4 col-lg-3 pt-sm-4 pb-sm-2 order-md-3">
 
-                            <!-- Offcanvas -->
+                            <!-- Button Canvas plus -->
                             <span class="text-white px-3">Nuovo Studente</span>
-                          
-                            <button class="btn border text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    
+                            <button class="btn border text-white my_hover_bg_plus" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                                 <i class="text-white fa-solid fa-plus"></i>
                             </button>
 
+                            <!-- Canvas page -->
                             <div class="offcanvas offcanvas-end w_md_50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
 
                                 <div class="offcanvas-header">
@@ -151,59 +162,85 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
 
+                                <!-- Canvas Form -->
                                 <div div class="offcanvas-body">
+
                                     <div class="container_canvas">
+
                                         <div class="row">
+
                                             <div class="col-6 mb-3">
+
                                                 <label for="input_name" class="form-label">Nome</label>
+
                                                 <input type="text" id="input_name" class="form-control" aria-describedby="passwordHelpBlock">
                                             </div>
 
                                             <div class="col-6 mb-3">
+
                                                 <label for="input_surname" class="form-label">Cognome</label>
+
                                                 <input type="text" id="input_surname" class="form-control" aria-describedby="passwordHelpBlock">
                                             </div>
 
                                             <div class="col-6 mb-3">
+
                                                 <label class="form-label" for="email">Email</label>
+
                                                 <div id="email" class="input-group">
+
                                                     <span class="input-group-text" id="basic-addon1">@</span>
+
                                                     <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
                                                   </div>
                                             </div>
                                             
                                             <div class="col-6 mb-3">
+
                                                 <label for="input_password" class="form-label">Password</label>
+
                                                 <input type="password" id="input_password" class="form-control" aria-describedby="passwordHelpBlock">
                                             </div>
 
                                             <div class="col-6 mb-3">
+
                                                 <label class="form-label" for="email">Indirizzo Email</label>
+
                                                 <div id="email"     class="input-group">
+
                                                     <span class="input-group-text" id="basic-addon1">@</span>
+
                                                     <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
                                                 </div>
                                             </div>
 
                                             <div class="col-6 mb-3">
+
                                                 <label for="input_password" class="form-label">Password</label>
+
                                                 <input type="password" id="input_password" class="form-control" aria-describedby="passwordHelpBlock">
                                             </div>
 
                                             <div class="col-12 mb-3">
+
                                                 <label for="input_address" class="form-label">Indirizzo</label>
+
                                                 <input type="text" id="input_address" class="form-control" aria-describedby="passwordHelpBlock">
                                             </div>
 
                                             <div class="col-6 mb-3">
+
                                                 <label for="input_city" class="form-label">Città</label>
+
                                                 <input type="text" id="input_city" class="form-control" aria-describedby="passwordHelpBlock">
                                             </div>
 
                                             <div class="col-4 mb-3">
                                                 <label class="form-label"
                                                 for="stato">Stato</label>
+
                                                 <select id="stato" class="form-select d-flex" aria-label="Default select example">
+
                                                     <option selected>Scegli...</option>
                                                     <option value="1">Italy</option>
                                                     <option value="2">USA</option>
@@ -212,20 +249,27 @@
                                             </div>
 
                                             <div class="col-2 my_col_cap mb-3">
+
                                                 <label for="input_cap" class="form-label">CAP</label>
+
                                                 <input type="number" id="input_cap" class="form-control" 
                                                 aria-describedby="passwordHelpBlock">
                                             </div>
 
                                             <div class="col-12 mb-3">
+
                                                 <label for="input_photo" class="form-label">Foto</label>
+
                                                 <input type="file" id="input_photo" class="form-control" 
                                                 aria-describedby="passwordHelpBlock">
                                             </div>
 
                                             <div class="col-12 mb-3">
+
                                                 <div class="form-check">
+
                                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+
                                                     <label class="form-check-label" for="flexCheckDefault">
                                                         Seleziona per proseguire
                                                     </label>
@@ -233,6 +277,7 @@
                                             </div>
 
                                             <div class="col-12 mb-3">
+
                                                 <button type="button" class="btn btn-primary">Salva</button>
 
                                                 <button type="button" class="btn btn-warning">Svuota</button>
@@ -243,9 +288,11 @@
                             </div>
                         </div>
 
+                        <!-- Banner Writing -->
                         <div class="col-sm-12 col-md-4 col-lg-6 pt-sm-2 pb-sm-3 pt-md-4 pb-md-2 order-md-1">
 
                             <div class="p-sm-3 ps-md-3 p-md-0">
+
                                 <span class="text-white fs-1">
                                     Boolean
                                 </span>
@@ -256,6 +303,7 @@
                             </div>
 
                             <div class="px-sm-3 ps-md-3 pt-1 pb-2">
+
                                 <span class="text-white rounded-pill px-2 py-1 ps-md-3 my_c_blaze">
                                     3 app
                                 </span>
@@ -283,6 +331,7 @@
                         </div>
 
                         <div class="col-sm-12 col-md-4 col-lg-3 py-sm-2 pt-md-4 pb-md-2 order-md-2">
+
                             <div class="text-white fw-bold px-3">
                                 Studenti online negli ultimi 30 minuti
                             </div>
@@ -304,13 +353,17 @@
 
                             <!-- Next classes -->
                             <div class="card w-100 my_title pb-3 mb-3">
+
                                 <div class="card-header fs-2 pb-3">
                                     Prossime classi
                                 </div>
 
-                                <table class="table">
+                                <table class="table table-hover">
+
                                     <thead>
+
                                         <tr>
+
                                             <th scope="col">Nome</th>
                                             <th scope="col" class="d-sm-none d-md-table-cell">Data inizio</th>
                                             <th scope="col" class="d-sm-none d-md-table-cell">ROI</th>
@@ -320,17 +373,26 @@
                                     </thead>
 
                                     <tbody>
+
                                         <tr>
+
                                             <td scope="row">
+
                                                 <img class="my_img" src="./assets/img/class-avatar.jpg" alt="symbol"> 
+
                                                 <span class="ps-3">Classe 75</span>
                                             </td>
+
                                             <td class="d-sm-none d-md-table-cell">15 Feb 2021</td>
+
                                             <td class="d-sm-none d-md-table-cell">20%</td>
+
                                             <td>
                                                 <div class="my_c_done rounded text-center text-white w-50">Done</div>
                                             </td>
+
                                             <td>
+
                                                 <button class="btn border-black text-center rounded me-2 my_c_pencil" type="button">
                                                     <i class="fa-solid fa-pencil"></i>
                                                 </button>
@@ -342,16 +404,24 @@
                                         </tr>
 
                                         <tr>
+
                                             <td scope="row">
+
                                                 <img class="my_img" src="./assets/img/class-avatar.jpg" alt="symbol"> 
+
                                                 <span class="ps-3">Classe 76</span>
                                             </td>
+
                                             <td class="d-sm-none d-md-table-cell">16 Feb 2021</td>
+
                                             <td class="d-sm-none d-md-table-cell">20%</td>
+
                                             <td>
                                                 <div class="my_c_done rounded text-center text-white w-50">Done</div>
                                             </td>
+
                                             <td>
+
                                                 <button class="btn border-black 
                                                     text-center rounded me-2 my_c_pencil" type="button">
                                                     <i class="fa-solid fa-pencil"></i>
@@ -364,16 +434,24 @@
                                         </tr>
 
                                         <tr>
+
                                             <td scope="row">
+
                                                 <img class="my_img" src="./assets/img/class-avatar.jpg" alt="symbol"> 
+
                                                 <span class="ps-3">Classe 77</span>
                                             </td>
+
                                             <td class="d-sm-none d-md-table-cell">17 Feb 2021</td>
+
                                             <td class="d-sm-none d-md-table-cell">20%</td>
+
                                             <td>
                                                 <div class="my_c_process rounded text-center text-white w-75">Process</div>
                                             </td>
+
                                             <td>
+
                                                 <button class="btn border-black text-center rounded me-2 my_c_pencil" type="button">
                                                     <i class="fa-solid fa-pencil"></i>
                                                 </button>
@@ -385,16 +463,24 @@
                                         </tr>
 
                                         <tr>
+
                                             <td scope="row">
+
                                                 <img class="my_img" src="./assets/img/class-avatar.jpg" alt="symbol"> 
+
                                                 <span class="ps-3">Classe 78</span>
                                             </td>
+
                                             <td class="d-sm-none d-md-table-cell">18 Feb 2021</td>
+
                                             <td class="d-sm-none d-md-table-cell">20%</td>
+
                                             <td>
-                                            <div class="my_c_done rounded text-center text-white w-50">Done</div>
+                                                <div class="my_c_done rounded text-center text-white w-50">Done</div>
                                             </td>
+
                                             <td>
+
                                                 <button class="btn border-black text-center rounded me-2 my_c_pencil" type="button">
                                                     <i class="fa-solid fa-pencil"></i>
                                                 </button>
@@ -406,17 +492,24 @@
                                         </tr>
 
                                         <tr>
+
                                             <td scope="row">
+
                                                 <img class="my_img" src="./assets/img/class-avatar.jpg" alt="symbol"> 
+
                                                 <span class="ps-3">Classe 79</span>
                                             </td>
+
                                             <td class="d-sm-none d-md-table-cell">19 Feb 2021</td>
+
                                             <td class="d-sm-none d-md-table-cell">20%</td>
+
                                             <td>
                                                 <div class="my_c_failed rounded text-center text-white w-50">Failed</div>
                                             </td>
                                             
                                             <td>
+
                                                 <button class="btn border-black text-center rounded me-2 my_c_pencil" type="button">
                                                     <i class="fa-solid fa-pencil"></i>
                                                 </button>
@@ -428,16 +521,24 @@
                                         </tr>
 
                                         <tr>
+
                                             <td scope="row">
+
                                                 <img class="my_img" src="./assets/img/class-avatar.jpg" alt="symbol"> 
+
                                                 <span class="ps-3">Classe 80</span>
                                             </td>
+
                                             <td class="d-sm-none d-md-table-cell">20 Feb 2021</td>
+
                                             <td class="d-sm-none d-md-table-cell">20%</td>
+
                                             <td>
                                                 <div class="my_c_done accordion-flush text-center rounded text-white w-50">Done</div>
                                             </td>
+
                                             <td>
+
                                                 <button class="btn border-black text-center rounded me-2 my_c_pencil" type="button">
                                                     <i class="fa-solid fa-pencil"></i>
                                                 </button>
@@ -449,16 +550,24 @@
                                         </tr>
 
                                         <tr>
+
                                             <td scope="row">
+
                                                 <img class="my_img" src="./assets/img/class-avatar.jpg" alt="symbol"> 
+
                                                 <span class="ps-3">Classe 81</span>
                                             </td>
+
                                             <td class="d-sm-none d-md-table-cell">21 Feb 2021</td>
+
                                             <td class="d-sm-none d-md-table-cell">20%</td>
+
                                             <td>
                                                 <div class="my_c_failed rounded text-center text-white w-50">Failed</div>
                                             </td>
+
                                             <td>
+
                                                 <button class="btn border-black text-center rounded me-2 my_c_pencil" type="button">
                                                     <i class="fa-solid fa-pencil"></i>
                                                 </button>
@@ -470,16 +579,24 @@
                                         </tr>
 
                                         <tr>
+
                                             <td scope="row">
+
                                                 <img class="my_img" src="./assets/img/class-avatar.jpg" alt="symbol"> 
+                                                
                                                 <span class="ps-3">Classe 82</span>
                                             </td>
+
                                             <td class="d-sm-none d-md-table-cell">22 Feb 2021</td>
+
                                             <td class="d-sm-none d-md-table-cell">20%</td>
+
                                             <td>
                                                 <div class="my_c_done rounded text-center text-white w-50">Done</div>
                                             </td>
+
                                             <td>
+
                                                 <button class="btn border-black text-center rounded me-2 my_c_pencil" type="button">
                                                     <i class="fa-solid fa-pencil"></i>
                                                 </button>
@@ -496,48 +613,57 @@
 
                             <!-- F.A.Q. -->    
                             <div class="card w-100 my_title">
+
                                 <div class="card-header fs-2 pb-3">
                                     F.A.Q.
                                 </div>
 
                                 <div class="accordion accordion-flush" id="accordionFlushExample">
+
                                     <div class="accordion-item">
+
                                         <h2 class="accordion-header">
+
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                                             Come aggiungere un nuovo studente?
                                             </button>
                                         </h2>
                                         
-                                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
+                                         <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
                                                 Lorem ipsum dolor sit amet consectetur  adipisicing elit. Maiores dicta consequuntur corrupti consectetur illum nisi illo optio aut exercitationem voluptatem alias natus aspernatur quod, cumque fugiat reprehenderit ducimus tempora officia.
-                                                </div>
                                             </div>
+                                        </div>
                                     </div>
 
                                     <div class="accordion-item">
+
                                         <h2 class="accordion-header">
+
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                                             Come posso accedere alle informazioni del mio account?
                                             </button>
                                         </h2>
                                       
                                         <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+
                                             <div class="accordion-body">
                                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nisi? Facilis fugit consequatur velit sed, beatae repellendus itaque totam, autem quibusdam nobis quae commodi provident, iste quas in odit eius!
                                             </div>
                                         </div>
-
                                     </div>
 
                                     <div class="accordion-item">
+
                                         <h2 class="accordion-header">
+
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                                             Posso usare questa dashboard da mobile?
                                             </button>
                                         </h2>
                                     
                                         <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+
                                             <div class="accordion-body">
                                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, perferendis ratione. Reprehenderit cum alias ipsam ducimus, dicta nihil omnis? Amet nobis aspernatur cum magnam corrupti quas, et modi eum praesentium.
                                             </div>
@@ -553,15 +679,21 @@
                        
                             <!-- Todo -->
                             <div class="card w-100 my_title mb-3">
+
                                 <div class="card-header fs-2 pb-3">
                                     Todo
                                 </div>
 
                                 <div class="card m-auto my-3 my_check">
+
                                     <ul class="list-group list-group-flush">
+
                                         <li class="list-group-item">
+
                                             <div class="form-check">
+
                                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+
                                                 <label class="form-check-label" for="flexCheckDefault">
                                                     Kickoff nuove classe
                                                 </label>
@@ -569,8 +701,11 @@
                                         </li>
 
                                         <li class="list-group-item">
+
                                             <div class="form-check">
+
                                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+
                                                 <label class="form-check-label" for="flexCheckDefault">
                                                     Lezione su Bootstrap 5 in classe #75
                                                 </label>
@@ -578,8 +713,11 @@
                                         </li>
 
                                         <li class="list-group-item">
+
                                             <div class="form-check">
+
                                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+
                                                 <label class="form-check-label" for="flexCheckDefault">
                                                     Controllare username github studenti
                                                 </label>
@@ -593,18 +731,24 @@
                             <div class="card w-100 my_title">
                           
                                 <div class="card m-auto my-3 my_stats">
+
                                     <img src="./assets/img/stats.jpeg" class="card-img-top" alt="stats">
 
                                     <div class="card-body">
+
                                     <h5 class="card-title">Utenti attivi</h5>
+
                                     <p class="card-text">
                                         Lista degli utenti attivi in piattaforma nell'ultimo mese
                                     </p>
                                 </div>
 
                                 <ul class="list-group list-group-flush">
+
                                     <li class="list-group-item">Gennaio: 1200</li>
+
                                     <li class="list-group-item">Febbraio: 800</li>
+                                    
                                     <li class="list-group-item">Marzo: 1500</li>
                                 </ul>
 
@@ -617,7 +761,6 @@
                 </div>
             </div>
         </div>          
-        <!-- NO Footer -->
     </div>
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
