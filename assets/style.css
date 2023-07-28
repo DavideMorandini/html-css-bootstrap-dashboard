@@ -98,7 +98,7 @@ form {
 }
 
 .my_container_main {
-    border: 5px solid green;
+    /* border: 5px solid green; */
     width: calc(100% - 15%);
 }
 
@@ -116,7 +116,7 @@ form {
 }
 
 .col {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .container {
@@ -131,7 +131,7 @@ form {
     /* border: 1px solid violet; */
 }
 
-.my_prox_class {
+.my_title{
     /* border: 1px solid blue; */
 }
 
@@ -154,6 +154,25 @@ form {
 .my_c_pencil {
     background-color: #ffffff;
 }
+
+.card {
+    /* border: 1px solid blue; */
+}
+
+.my_check {
+    width: 90%;
+}
+
+.my_stats {
+    width: 90%;
+}
+
+.container_prossime_classi {
+    /* border: 5px solid red; */
+}
+
+
+
 
 
 
